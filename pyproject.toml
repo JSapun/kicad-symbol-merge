@@ -1,0 +1,16 @@
+[project]
+name = "kicad-symbol-merge"
+version = "0.1.0"
+description = "Merge all .kicad_sym symbol files in a folder into one KiCad library. Kicad v6+."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Justin Sapun", email = "jsapun24@email.com" }]
+requires-python = ">=3.7"
+
+[project.scripts]
+kicad-symbol-merge = "kicad-symbol-merge.merge:main"
+
+[project.urls]
+Homepage = "https://github.com/yourname/merge-kicad-folder"
+Source = "https://github.com/yourname/merge-kicad-folder"
+Issues = "https://github.com/yourname/merge-kicad-folder/issues"
