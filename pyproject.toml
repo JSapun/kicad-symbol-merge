@@ -1,6 +1,6 @@
 [project]
 name = "kicad-symbol-merge"
-version = "0.1.0"
+version = "0.2.0"
 description = "Merge all .kicad_sym symbol files in a folder into one KiCad library (KiCad v6+ compatible)."
 readme = "README.md"
 license = { text = "MIT" }
@@ -15,6 +15,6 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project.urls]
-Homepage = "https://github.com/yourname/merge-kicad-folder"
-Source = "https://github.com/yourname/merge-kicad-folder"
-Issues = "https://github.com/yourname/merge-kicad-folder/issues"
+Homepage = "https://github.com/jsapun/kicad-symbol-merge"
+Source = "https://github.com/jsapun/kicad-symbol-merge"
+Issues = "https://github.com/jsapun/kicad-symbol-merge/issues"
