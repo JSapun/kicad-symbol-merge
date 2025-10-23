@@ -1,6 +1,6 @@
 # kicad-symbol-merge
 
-Getting sick of downloading custom KiCad symbols one by one — only to have to manually add each as its own library?  
+Getting sick of downloading custom KiCad symbols one by one, only to have to manually add each as its own library?  
 Well, there’s an easy solution.
 Just merge them all into one KiCad symbol library!
 
@@ -50,7 +50,7 @@ kicad-symbol-merge individual_symbols merged_symbols.kicad_sym
 
 ---
 
-## 🪪 License
+## License
 
 MIT © 2025 Justin Sapun
 
