@@ -1,7 +1,57 @@
-# merge-kicad-folder
+# kicad-symbol-merge
 
-A Python CLI tool to merge all `.kicad_sym` symbol files in a folder into one KiCad 8-compatible library.
+Getting sick of downloading custom KiCad symbols one by one — only to have to manually add each as its own library?  
+Well, there’s an easy solution.
+Just merge them all into one KiCad symbol library!
 
-## Install
+---
+
+## Installation
+
+Install directly from PyPI:
+
+    pip install kicad-symbol-merge
+
+---
+
+## Usage
+
+Run from the command line:
+
 ```bash
-pip install merge-kicad-folder
+kicad-symbol-merge <source_folder> <output_file>
+```
+Example:
+```bash
+kicad-symbol-merge individual_symbols merged_symbols.kicad_sym
+```
+This will take every `.kicad_sym` file inside `individual_symbols/` and merge them into a single, KiCad v6+ compatible library file called `merged_symbols.kicad_sym`.
+
+---
+
+## Notes
+
+- Supports KiCad v6, v7, and v8 `.kicad_sym` formats  
+- Works recursively in any folder you specify  
+- Safely removes duplicate headers and closes all parentheses properly  
+- Output file can be opened directly in KiCad’s Symbol Editor
+
+---
+
+## Example Workflow
+
+1. Download multiple symbol files (e.g., from GitHub, LCSC, SnapEDA, etc.)  
+2. Put them into a folder called `individual_symbols`  
+3. Run:
+```bash 
+kicad-symbol-merge individual_symbols merged_symbols.kicad_sym
+```
+4. Add `merged_symbols.kicad_sym` to your KiCad global symbol libraries
+
+---
+
+## 🪪 License
+
+MIT © 2025 Justin Sapun
+
+---
